@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox fx:id="windowLogoLoadingRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="768.0" style="-fx-background-color: rgb(0,0,0);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.winLogoLoadingScreenController">
+   <children>
+      <ImageView fitHeight="144.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 600; -fx-translate-y: 150;">
+         <image>
+            <Image url="@../../../../fav/icons/win-logo.png" />
+         </image>
+      </ImageView>
+      <Region prefHeight="119.0" prefWidth="768.0" />
+      <ImageView fx:id="loadingCircle" fitHeight="41.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 650; -fx-translate-y: 250;">
+         <image>
+            <Image url="@../../../../fav/icons/circular-indicator.png" />
+         </image>
+      </ImageView>
+   </children>
+</VBox>

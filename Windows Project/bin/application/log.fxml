@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<HBox fx:id="rootPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="499.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Region prefHeight="224.0" prefWidth="35.0" />
+      <VBox prefHeight="499.0" prefWidth="363.0">
+         <children>
+            <Region prefHeight="97.0" prefWidth="261.0" />
+            <ImageView fx:id="userImg" fitHeight="195.0" fitWidth="209.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 80;">
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <Region prefHeight="4.0" prefWidth="261.0" />
+            <Label id="userName" alignment="CENTER" contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="337.0" text="ibu" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Roboto" size="35.0" />
+               </font>
+            </Label>
+            <Region prefHeight="42.0" prefWidth="493.0" />
+            <HBox prefHeight="42.0" prefWidth="363.0">
+               <children>
+                  <PasswordField id="passwordField" fx:id="passwordField" prefHeight="39.0" prefWidth="311.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </PasswordField>
+                  <Region prefHeight="53.0" prefWidth="2.0" />
+                  <Button id="goButton" fx:id="goButton" mnemonicParsing="false" onAction="#makeFadeOut" prefHeight="39.0" prefWidth="52.0" text="&gt;" textFill="WHITE">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="passErrMsg" alignment="CENTER" prefHeight="17.0" prefWidth="363.0" text=" " textFill="#a15f5f">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</HBox>

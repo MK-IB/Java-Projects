@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox fx:id="home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Region prefHeight="48.0" prefWidth="744.0" />
+      <HBox prefHeight="66.0" prefWidth="744.0">
+         <children>
+            <Region prefHeight="82.0" prefWidth="75.0" />
+            <Label prefHeight="83.0" prefWidth="165.0" text="Start" textFill="WHITE">
+               <font>
+                  <Font name="Dotum" size="58.0" />
+               </font>
+            </Label>
+            <Region prefHeight="82.0" prefWidth="840.0" />
+            <Label prefHeight="81.0" prefWidth="62.0" text="ibu" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <ImageView id="startUserImg" fitHeight="82.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <GridPane fx:id="home" alignment="CENTER" prefHeight="405.0" prefWidth="771.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="367.0" minWidth="10.0" prefWidth="75.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="633.0" minWidth="10.0" prefWidth="67.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="633.0" minWidth="10.0" prefWidth="212.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="633.0" minWidth="10.0" prefWidth="151.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="633.0" minWidth="10.0" prefWidth="266.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="177.0" minHeight="10.0" prefHeight="113.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="143.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="130.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <ImageView id="gallery_icon" fitHeight="118.0" fitWidth="118.0" onMouseClicked="#trans" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 40;">
+               <image>
+                  <Image url="@../../../../fav/icons/gallery.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="124.0" fitWidth="161.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 40;" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../fav/icons/noepad-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="141.0" fitWidth="162.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 40;" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../fav/icons/Mail.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="190.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-y: 40;" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../../../../fav/icons/music-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="251.0" fitWidth="493.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../fav/icons/windowsstorelogo_2_0.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="167.0" fitWidth="490.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: -50;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../fav/icons/rebound.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="130.0" fitWidth="131.0" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 30;" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../../../../fav/icons/calendar-3-xxl.png" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

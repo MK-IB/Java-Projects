@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox fx:id="dateTimeScreen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#loadLoginScreen" prefHeight="532.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dateTimeController">
+   <children>
+      <Region prefHeight="395.0" prefWidth="724.0" />
+      <Label fx:id="timeText" alignment="CENTER" prefHeight="101.0" prefWidth="415.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Roboto" size="66.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateText" alignment="CENTER" prefHeight="87.0" prefWidth="633.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Roboto Thin" size="71.0" />
+         </font>
+      </Label>
+   </children>
+</VBox>

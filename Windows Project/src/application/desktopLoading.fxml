@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="752.0" style="-fx-background-color: rgb(10,80,200);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <Region prefHeight="290.0" prefWidth="755.0" />
+      <Label fx:id="label" alignment="TOP_RIGHT" prefHeight="65.0" prefWidth="796.0" style="-fx-translate-x: 50;" text="Loading..." textFill="WHITE">
+         <font>
+            <Font name="Dotum" size="60.0" />
+         </font>
+      </Label>
+      <ProgressIndicator prefHeight="168.0" prefWidth="686.0" />
+   </children>
+</VBox>
